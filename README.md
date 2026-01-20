@@ -41,7 +41,7 @@ To solve this problem, I built a command-line utility that allows me to close ru
 
   -  Node js was chosen because: 
      - It is lightweight and fast for scripting tasks
-     - has built-in support for executing stem commands(child_process)
+     - has built-in support for executing system commands(child_process)
      - makes it easy create cross-platform CLI tools
 
 #### Minimal output
