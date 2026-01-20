@@ -2,7 +2,7 @@
 
 const {execSync} = require('child_process');
 
-const EXECLUDED_APPS = ["System Settings", "Google Chrome", "Visual Studio Code", "Finder"];
+const EXCLUDED_APPS = ["System Settings", "Google Chrome", "Visual Studio Code", "Finder"];
 
 function getRunningApplications() {
     const script = `
@@ -12,7 +12,7 @@ function getRunningApplications() {
     `;
     const result = execSync(`osascript -e '${script}'`).toString().trim();
     console.log("Running applications before exclusion:", result);
-    return result.split(', ').filter(app => !EXECLUDED_APPS.includes(app));
+    return result.split(', ').filter(app => !EXCLUDED_APPS.includes(app));
 }
 
 function quitApplications(apps, force){
@@ -36,7 +36,7 @@ function main(){
         return;
     }
     console.log(`Found running applications: ${apps}\n`);
-    
+
     apps.forEach(quitApplications);
     console.log("\nAll possible applications processed!");
 }
