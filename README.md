@@ -48,6 +48,9 @@ To solve this problem, I built a command-line utility that allows me to close ru
 
 the utility runs silently unless an error occurs. This keeps the shutdown process clean and distraction-free.
 
+##### sample output
+<img src="https://snipboard.io/U623Ru.jpg" alt="output image" />
+
 
 ## Conclusion
 
