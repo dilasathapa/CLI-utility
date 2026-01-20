@@ -21,7 +21,7 @@ To solve this problem, I built a command-line utility that allows me to close ru
   - macOS (current implementation is macOS-specific)
 
 - Setup the project
-  - clone the repository nd install dependencies
+  - clone the repository and install dependencies
   - Make the CLI Executable
   ```
     chmod +x src/index.js
